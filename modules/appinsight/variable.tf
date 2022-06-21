@@ -5,7 +5,7 @@ variable "resource_name" {
 
 variable "location" {
     description = "azure location to deploy resources"
-    default = "eastus"
+    default = "east us"
 }
 
 variable "resource_group_name" {

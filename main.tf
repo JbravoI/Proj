@@ -15,3 +15,4 @@ module "log_analytics" {
   log_analytics_workspace_name     = var.log_analytics_workspace_name
   log_analytics_workspace_sku      = var.log_analytics_workspace_sku
 }
+
