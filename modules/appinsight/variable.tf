@@ -1,5 +1,5 @@
 variable "resource_name" {
-    description = "name of the rsource"
+    description = "name of the resource"
     default = "appinsight name"
 }
 
@@ -17,4 +17,9 @@ variable "application_type" {
     type = string
     description = "name of application_type"
     default = "web"
+}
+
+variable "resource_name_log" {
+    description = "name of the resource"
+    default = "appinsight name"
 }
