@@ -34,3 +34,6 @@ variable "storageaccountname" {
     default = "my_storage_account"
 }
 
+variable "for_app" {
+    description = "for app service plan"
+}
