@@ -1,0 +1,5 @@
+This is a module script for 
+Appinsight
+Function App (Functionapp2)
+Storage Account
+
