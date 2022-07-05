@@ -24,13 +24,13 @@ module "logs" {
   resource_group_name = var.resource_group_name
 }
 
-module "function_app_windows" {
-  source  = "./modules/functionapp"
+module "function_app" {
+  source  = "./modules/functionapp2"
   # version = "1.1.0"
 
   location            = var.location
   resource_group_name = var.resource_group_name
-  app_service_plan_id = module.app-service.appservice_id.id
+  # for_app     = module.app-service.appservice_id.id
   # os_type = "Windows"
 
   # storage_account_identity_type = "SystemAssigned"
@@ -38,10 +38,10 @@ module "function_app_windows" {
 }
 
 #APP Appservice Plan
-module "app-service" {
-  source  = "./modules/appserviceplan"
-  # version = "1.1.0"
+# module "app-service" {
+#   source  = "./modules/appserviceplan"
+#   # version = "1.1.0"
 
-  resource_group_name = var.resource_group_name.name
+#   resource_group_name = var.resource_group_name.name
  
-}
+# }
